@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beers",
+  "info": {
+    "singularName": "beer",
+    "pluralName": "beers",
+    "displayName": "beer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "beerName": {
+      "type": "string",
+      "required": true
+    },
+    "beerType": {
+      "type": "string",
+      "required": true
+    },
+    "beerABV": {
+      "type": "decimal"
+    },
+    "beerIBU": {
+      "type": "decimal"
+    },
+    "beerLowPrice": {
+      "type": "decimal"
+    },
+    "beerHighPrice": {
+      "type": "decimal"
+    },
+    "breweryLogo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
