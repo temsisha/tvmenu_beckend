@@ -4,7 +4,8 @@
   "info": {
     "singularName": "beer",
     "pluralName": "beers",
-    "displayName": "beer"
+    "displayName": "beer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,12 +33,16 @@
       "type": "decimal"
     },
     "breweryLogo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "newBeer": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
